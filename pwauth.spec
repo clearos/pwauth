@@ -1,6 +1,6 @@
 Name:           pwauth
 Version:        2.3.10
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        External plugin for mod_authnz_external authenticator
 
 Group:          Applications/System
@@ -57,6 +57,9 @@ install -p -T %{SOURCE1} %{buildroot}%{_sysconfdir}/pam.d/pwauth
 
 
 %changelog
+* Sat Jul 21 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.3.10-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
 * Fri May 05 2012 Philip Prindeville <philipp@fedoraproject.org> 2.3.10-1
 - Initial checkin after Fedora packaging review.
 
