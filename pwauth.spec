@@ -2,7 +2,7 @@
 
 Name:           pwauth
 Version:        2.3.10
-Release:        5%{?dist}
+Release:        6%{?dist}
 Summary:        External plugin for mod_authnz_external authenticator
 
 Group:          Applications/System
@@ -58,6 +58,9 @@ install -p -T %{SOURCE1} %{buildroot}%{_sysconfdir}/pam.d/pwauth
 
 
 %changelog
+* Sun Aug 04 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.3.10-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
+
 * Tue May 21 2013 Philip Prindeville <philipp@fedoraproject.org> 2.3.10-5
 - Fix for bz#965461
 - Get rid of some of the more worrisome compiler warnings.
