@@ -1,1 +1,4 @@
 /pwauth-2.3.10.tar.gz
+/Makefile
+*.src.rpm
+*.tar.gz
