@@ -44,6 +44,7 @@ mkdir -p %{buildroot}%{_bindir} %{buildroot}%{_sysconfdir}/pam.d
 install -p -m 4750 -t %{buildroot}%{_bindir} pwauth
 install -p -m 0750 -t %{buildroot}%{_bindir} unixgroup
 install -p -T %{SOURCE1} %{buildroot}%{_sysconfdir}/pam.d/pwauth
+install -p -T %{SOURCE1} %{buildroot}%{_sysconfdir}/pam.d/unixgroup
 
 
 %clean
@@ -52,9 +53,10 @@ install -p -T %{SOURCE1} %{buildroot}%{_sysconfdir}/pam.d/pwauth
 %files
 %defattr(-,root,root,-)
 %attr(4750,-,apache) %{_bindir}/pwauth
-%attr(0750,-,apache) %{_bindir}/unixgroup
+%attr(4750,-,apache) %{_bindir}/unixgroup
 %attr(644,-,-) %{_sysconfdir}/pam.d/pwauth
-%doc CHANGES INSTALL README
+%attr(644,-,-) %{_sysconfdir}/pam.d/unixgroup
+%doc CHANGES INSTALL README FORM_AUTH
 
 
 %changelog
