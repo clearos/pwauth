@@ -2,7 +2,7 @@
 
 Name:           pwauth
 Version:        2.3.10
-Release:        9%{?dist}
+Release:        9%{?dist}.1
 Summary:        External plugin for mod_authnz_external authenticator
 
 Group:          Applications/System
@@ -13,6 +13,7 @@ Source1:        pwauth.pam
 Patch1:		pwauth-make.patch
 Patch2:         pwauth-strchr.patch
 Patch3:         pwauth-cleanup.patch
+Patch4:         pwauth-2.3.10-uids.patch
 
 BuildRequires:  pam-devel
 Requires(pre):  httpd, perl
@@ -30,6 +31,7 @@ versions of Unix.
 %patch1 -p1 -b .make
 %patch2 -p1 -b .strchr
 %patch3 -p1 -b .cleanup
+%patch4 -p1 -b .uids
 
 %build
 export CFLAGS="${RPM_OPT_FLAGS}"

@@ -1,0 +1,12 @@
+diff -rup pwauth-2.3.10/config.h pwauth-2.3.10-uids/config.h
+--- pwauth-2.3.10/config.h	2016-11-28 21:26:03.139474360 -0500
++++ pwauth-2.3.10-uids/config.h	2016-11-28 21:26:50.603506794 -0500
+@@ -278,7 +278,7 @@
+  * to change the uid list.
+  */
+ 
+-#define SERVER_UIDS 48		/* user "wwwrun" on the author's system */
++/* #define SERVER_UIDS 48 */		/* user "wwwrun" on the author's system */
+ 
+ 
+ /* If MIN_UNIX_UID is defined to an integer, logins with uid numbers less than
