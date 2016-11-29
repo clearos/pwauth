@@ -10,7 +10,7 @@ License:        BSD
 URL:            http://code.google.com/p/pwauth/
 Source0:        http://pwauth.googlecode.com/files/%{name}-%{version}.tar.gz
 Source1:        pwauth.pam
-Patch1:		pwauth-make.patch
+Patch1:     pwauth-make.patch
 Patch2:         pwauth-strchr.patch
 Patch3:         pwauth-cleanup.patch
 Patch4:         pwauth-2.3.10-uids.patch
@@ -58,7 +58,7 @@ install -p -T %{SOURCE1} %{buildroot}%{_sysconfdir}/pam.d/unixgroup
 %attr(4750,-,apache) %{_bindir}/unixgroup
 %attr(644,-,-) %{_sysconfdir}/pam.d/pwauth
 %attr(644,-,-) %{_sysconfdir}/pam.d/unixgroup
-%doc CHANGES INSTALL README FORM_AUTH
+%doc CHANGES INSTALL README
 
 
 %changelog
@@ -88,7 +88,7 @@ install -p -T %{SOURCE1} %{buildroot}%{_sysconfdir}/pam.d/unixgroup
 * Sat Jul 21 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.3.10-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
 
-* Fri May 05 2012 Philip Prindeville <philipp@fedoraproject.org> 2.3.10-1
+* Fri May 04 2012 Philip Prindeville <philipp@fedoraproject.org> 2.3.10-1
 - Initial checkin after Fedora packaging review.
 
 * Tue Apr 17 2012 Philip Prindeville <philipp@fedoraproject.org> 2.3.10-0
